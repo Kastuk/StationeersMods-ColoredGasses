@@ -34,20 +34,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="0Harmony20">
-      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Stationeers\BepInEx\core\0Harmony20.dll</HintPath>
+      <HintPath>E:\SteamLibrary\steamapps\common\Stationeers\BepInEx\core\0Harmony20.dll</HintPath>
     </Reference>
-    <Reference Include="Assembly-CSharp_publicized">
-      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Stationeers\rocketstation_Data\Managed\publicized_assemblies\Assembly-CSharp_publicized.dll</HintPath>
+    <Reference Include="Assembly-CSharp-Publicized">
+      <HintPath>E:\SteamLibrary\steamapps\common\Stationeers\rocketstation_Data\Managed\AssemblyPublicizer\Delivery\Assembly-CSharp-Publicized.dll</HintPath>
     </Reference>
     <Reference Include="BepInEx">
-      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Stationeers\BepInEx\core\BepInEx.dll</HintPath>
-    </Reference>
-    <Reference Include="ConfigurationManager, Version=18.0.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Users\Jerem\OneDrive\Documents\My Games\Stationeers\mods\ConfigurationManager\Scripts\ConfigurationManager.dll</HintPath>
+      <HintPath>E:\SteamLibrary\steamapps\common\Stationeers\BepInEx\core\BepInEx.dll</HintPath>
     </Reference>
     <Reference Include="Facepunch.Steamworks.Win64">
-      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Stationeers\rocketstation_Data\Managed\Facepunch.Steamworks.Win64.dll</HintPath>
+      <HintPath>E:\SteamLibrary\steamapps\common\Stationeers\rocketstation_Data\Managed\Facepunch.Steamworks.Win64.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -58,27 +54,25 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Stationeers\rocketstation_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+      <HintPath>E:\SteamLibrary\steamapps\common\Stationeers\rocketstation_Data\Managed\Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine">
-      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Stationeers\rocketstation_Data\Managed\UnityEngine.dll</HintPath>
+      <HintPath>E:\SteamLibrary\steamapps\common\Stationeers\rocketstation_Data\Managed\UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Stationeers\rocketstation_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>E:\SteamLibrary\steamapps\common\Stationeers\rocketstation_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.InputLegacyModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Stationeers\rocketstation_Data\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>E:\SteamLibrary\steamapps\common\Stationeers\rocketstation_Data\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Stationeers\rocketstation_Data\Managed\UnityEngine.ParticleSystemModule.dll</HintPath>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>E:\SteamLibrary\steamapps\common\Stationeers\rocketstation_Data\Managed\UnityEngine.ParticleSystemModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Stationeers\rocketstation_Data\Managed\UnityEngine.UI.dll</HintPath>
+      <HintPath>E:\SteamLibrary\steamapps\common\Stationeers\rocketstation_Data\Managed\UnityEngine.UI.dll</HintPath>
     </Reference>
-    <Reference Include="UniverseLib.Mono">
-      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Stationeers\BepInEx\plugins\ColoredGasses\UniverseLib.Mono.dll</HintPath>
+    <Reference Include="UniverseLib.Mono, Version=1.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\UniverseLib.Mono.1.5.1\lib\net35\UniverseLib.Mono.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -88,8 +82,9 @@
     <Compile Include="GasParticles.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <PropertyGroup>
-    <PostBuildEvent>copy "$(ProjectDir)\bin\Debug\ColoredGasses.dll" "$(CommonDir)\Scripts\"</PostBuildEvent>
-  </PropertyGroup>
+
 </Project>
